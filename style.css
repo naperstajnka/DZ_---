@@ -1,0 +1,306 @@
+body * {
+    font-family: 'Alike', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Основное поле */
+#pole {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: #536591;
+    /*спрятать полосу прокрутки*/
+    overflow: hidden;
+}
+
+#h_header1 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    background: #000000;
+}
+
+.g_zagolovki {
+    position: absolute;
+    width: 250px;
+    left: calc(50% - 250px/2);
+    top: 10%;
+
+    color: #FFFFFF;
+}
+
+
+/* Логотип 
+#ball {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 60px;
+    height: 58px;
+    left: calc(50% - 60px/2);
+    top: 8%;
+
+    background: #ffffff;
+    border: 1px solid #000000;
+}
+
+#logo {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: calc(50% - 40px/2);
+    top: 15%;
+
+    background: url(ball.png);
+}
+ Конец - логотип */
+
+
+/* Поля с контентом */
+#vue1 {
+
+    position: absolute;
+    width: 73%;
+    height: 100%;
+    left: calc(50% - 73%/2);
+    top: 30%;
+}
+
+#vue2 {
+
+    position: absolute;
+    width: 73%;
+    height: 100%;
+    left: calc(50% - 73%/2);
+    top: 30%;
+}
+
+#vue3 {
+
+    position: absolute;
+    width: 73%;
+    height: 100%;
+    left: calc(50% - 73%/2);
+    top: 30%;
+}
+
+/* Меню */
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 8%;
+    height: 58px;
+    top: 1px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+#li1 {
+    left: calc(50% - 8%/2 - 4%);
+}
+
+#li2 {
+    left: calc(50% - 8%/2 + 4%);
+}
+
+.menu a {
+    position: absolute;
+    width: 120px;
+    height: 28px;
+    left: calc(50% - 120px/2);
+    top: 16px;
+
+    color: #000000;
+
+    /*убрать подчеркивание у ссылки*/
+    text-decoration: none;
+}
+
+.menu li:hover {
+    border: 2px solid #7CBEC1;
+}
+
+.menu a:hover {
+    color: #536591;
+}
+/* Конец - меню */
+
+/* Поиск */
+.search-form {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    left: calc(50% - 50%/2);
+    top: 20%;
+
+    background: #FFFFFF;
+    border: 0px solid #000000;
+}
+
+.search-form input {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 85%;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border: 2px solid #000000;
+}
+
+.search-form button {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 15%;
+    height: 40px;
+    left: calc(85%);
+    top: 0px;
+
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+
+.search-form button:hover {
+    border: 2px solid #7CBEC1;
+    color: #536591;
+}
+
+.search-form input:hover {
+    border: 2px solid #7CBEC1;
+}
+/* Конец - поиск */
+
+/* Карточки */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0px;
+}
+
+.grid-element {
+    height: 100px;
+    padding: 20px;
+    border: solid 2px #000;
+
+    background: #FFFFFF;
+}
+
+.grid-element:hover {
+    border: 2px solid #7CBEC1;
+    color: #536591;
+}
+
+.grid-element a {
+    /*убрать подчеркивание у ссылки*/
+    text-decoration: none;
+}
+
+/* Конец - карточки */
+
+/* Карточки2 */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+.grid-element2 {
+    height: 60px;
+    padding: 0px;
+    border: solid 1px #000;
+
+    background: #FFFFFF;
+}
+
+.grid-element2:hover {
+    border: 2px solid #7CBEC1;
+    color: #536591;
+}
+/* Конец - карточки2 */
+
+/* Карточки3 */
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 0px;
+}
+
+.grid-element3 {
+    height: 180px;
+    padding: 20px;
+    border: solid 2px #000;
+
+    background: #FFFFFF;
+}
+
+.grid-element3:hover {
+    border: 2px solid #7CBEC1;
+    color: #536591;
+}
+/* Конец - карточки3 */
+
+/* Карточки для ссылок (внутренняя часть) */
+.g_element {
+        height: 180px;
+}
+
+/* Хлебные крошки*/
+/* Стиль списка */
+.breadcrumb {
+    position: absolute;
+    left: calc(50% - 100%/2 + 14%);
+    top: 7%;
+
+    /*убрать подчеркивание у ссылки*/
+    text-decoration: none;
+}
+
+/* Добавить цвет для всех ссылок */
+.breadcrumb a {
+    color: #A3AECA;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.breadcrumb h {
+    color: #A3AECA;
+    font-size: 12px;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+.breadcrumb a:hover {
+    color: #FFFFFF;
+
+    /*убрать подчеркивание у ссылки*/
+    text-decoration: none;
+}
+/* Конец - Хлебные крошки*/
+
